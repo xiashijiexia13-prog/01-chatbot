@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "我叫xsj"
+    },
+    {
+        "role": "assistant",
+        "content": "你好，xsj！试试这个超简单的命令：  \n`print('Hello, World!')`"
+    },
+    {
+        "role": "user",
+        "content": "我叫什么"
+    },
+    {
+        "role": "assistant",
+        "content": "你叫xsj！试试用Python打印：  \n`print('xsj')`"
+    },
+    {
+        "role": "user",
+        "content": "我叫什么 我之前告诉你了"
+    },
+    {
+        "role": "assistant",
+        "content": "你叫xsj！试试：`print('xsj')`"
+    }
+]
