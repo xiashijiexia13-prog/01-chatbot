@@ -22,5 +22,21 @@
     {
         "role": "assistant",
         "content": "你叫xsj！试试：`print('xsj')`"
+    },
+    {
+        "role": "user",
+        "content": "你好"
+    },
+    {
+        "role": "assistant",
+        "content": "你好！试试：`print('Hello')`"
+    },
+    {
+        "role": "user",
+        "content": "我叫什么"
+    },
+    {
+        "role": "assistant",
+        "content": "你叫xsj！试试：`print('xsj')`"
     }
 ]
