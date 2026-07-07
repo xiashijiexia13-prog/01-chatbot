@@ -3,6 +3,7 @@ from app.chatbot import ask_ai
 from app.history import save_history
 from app.history import load_history
 from app.logger import logger
+from app.config import MAX_HISTORY
 
 logger.info("聊天机器人启动")
 
@@ -46,5 +47,13 @@ while True:
             "content": answer
         }
     )
+
+    system_message = messages[0]
+
+    history = messages[1:]
+
+    history = history[-MAX_HISTORY:]
+
+    messages = [system_message] + history
 
     save_history(messages)

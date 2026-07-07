@@ -1,5 +1,7 @@
 from ollama import chat
 from app.config import MODEL_NAME
+from app.logger import logger
+
 
 def ask_ai(messages):
     try:
@@ -10,4 +12,5 @@ def ask_ai(messages):
         return response["message"]["content"]
 
     except Exception as e:
-        return f"发生错误：{e}"
+        logger.error(f"AI调用失败：{e}")
+        return "AI 当前不可用，请稍后再试。"

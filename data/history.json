@@ -1,42 +1,82 @@
 [
     {
         "role": "user",
-        "content": "我叫xsj"
+        "content": "\"d:\\vscode project\\01-chatbot\\.venv\\Scripts\\python.exe\" \"d:/vscode project/01-chatbot/main.py\""
     },
     {
         "role": "assistant",
-        "content": "你好，xsj！试试这个超简单的命令：  \n`print('Hello, World!')`"
+        "content": "发生错误： (status code: 502)"
     },
     {
         "role": "user",
-        "content": "我叫什么"
+        "content": "exitt"
     },
     {
         "role": "assistant",
-        "content": "你叫xsj！试试用Python打印：  \n`print('xsj')`"
+        "content": "发生错误： (status code: 502)"
     },
     {
         "role": "user",
-        "content": "我叫什么 我之前告诉你了"
+        "content": "exit"
     },
     {
         "role": "assistant",
-        "content": "你叫xsj！试试：`print('xsj')`"
+        "content": "发生错误： (status code: 502)"
     },
     {
         "role": "user",
-        "content": "你好"
+        "content": "eixt"
     },
     {
         "role": "assistant",
-        "content": "你好！试试：`print('Hello')`"
+        "content": "发生错误： (status code: 502)"
     },
     {
         "role": "user",
-        "content": "我叫什么"
+        "content": "exit"
     },
     {
         "role": "assistant",
-        "content": "你叫xsj！试试：`print('xsj')`"
+        "content": "发生错误： (status code: 502)"
+    },
+    {
+        "role": "user",
+        "content": "你好 我是谁"
+    },
+    {
+        "role": "assistant",
+        "content": "AI 当前不可用，请稍后再试。"
+    },
+    {
+        "role": "user",
+        "content": "你好 我是谁"
+    },
+    {
+        "role": "assistant",
+        "content": "你好！你叫xsj。  \n（当前环境有错误，无法运行代码，但名字已记录）"
+    },
+    {
+        "role": "user",
+        "content": "你好 我是谁"
+    },
+    {
+        "role": "assistant",
+        "content": "你好！你叫xsj。"
+    },
+    {
+        "role": "user",
+        "content": "\"d:\\vscode project\\01-chatbot\\.venv\\Scripts\\python.exe\" \"d:/vscode project/01-chatbot/main.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "你好！你叫xsj。  \n\n（当前环境有错误，无法运行代码，但名字已记录）"
+    },
+    {
+        "role": "user",
+        "content": "我是谁？"
+    },
+    {
+        "role": "assistant",
+        "content": "你好！你叫xsj。"
     }
 ]
