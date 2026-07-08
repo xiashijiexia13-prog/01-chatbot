@@ -54,7 +54,6 @@ while True:
     print("\nAI：")
     print(answer)
     print("-" * 50)
-
     messages.append(
         {
             "role": "assistant",

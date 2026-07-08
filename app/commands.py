@@ -17,4 +17,11 @@ def execute_command(command):
     if command == "/clear":
         return clear_messages(), "聊天记录已清空！"
 
-    return None, None
+    if command == "/help":
+        return None, (
+            "支持的命令：\n"
+            "/help   查看帮助\n"
+            "/clear  清空聊天记录"
+        )
+
+    return None, "未知命令，输入 /help 查看帮助。"
