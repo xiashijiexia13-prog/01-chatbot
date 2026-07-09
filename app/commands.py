@@ -1,12 +1,16 @@
 from app.prompt import SYSTEM_PROMPT
 
-def clear_messages():   
-    return [
-        {
-            "role": "system",
-            "content": SYSTEM_PROMPT
-        }
-    ]
+def clear_messages():
+
+    return {
+        "messages": [
+            {
+                "role": "system",
+                "content": SYSTEM_PROMPT
+            }
+        ],
+        "message": "聊天记录已清空！"
+    }
 
 
 def is_command(text):
@@ -14,14 +18,25 @@ def is_command(text):
 
 def execute_command(command):
 
-    if command == "/clear":
-        return clear_messages(), "聊天记录已清空！"
+    if command not in COMMANDS:
+        return None, "未知命令，输入 /help 查看帮助。"
 
-    if command == "/help":
-        return None, (
+    result = COMMANDS[command]()
+
+    return result["messages"], result["message"]
+
+def help_message():
+
+    return {
+        "messages": None,
+        "message": (
             "支持的命令：\n"
             "/help   查看帮助\n"
             "/clear  清空聊天记录"
         )
+    }
 
-    return None, "未知命令，输入 /help 查看帮助。"
+COMMANDS = {
+    "/clear": clear_messages,
+    "/help": help_message
+}
